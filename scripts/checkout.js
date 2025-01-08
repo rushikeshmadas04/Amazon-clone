@@ -18,6 +18,7 @@ cart.forEach((cartItem)=>{
 
   });
 
+
   cartSummaryHTML+=
   
   `
