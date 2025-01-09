@@ -1,3 +1,15 @@
+export function getProduct(productId){
+  let matchingProduct = products.find((product) => product.id === productId);
+
+  // If no matching product is found, skip this cart item
+  if (!matchingProduct) {
+    console.error(`Product with ID ${productId} not found.`);
+    return;
+  }
+
+  return matchingProduct;
+}
+
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
