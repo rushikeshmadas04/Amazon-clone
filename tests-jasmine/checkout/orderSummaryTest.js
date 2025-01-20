@@ -4,7 +4,7 @@ import {loadFromStrorage} from '../../data/cart.js';
 describe('test suite: renderOrderSummary', ()=>{
   it('displays the cart',()=>{
     document.querySelector('.js-test-container').innerHTML=`
-      <div class="js-test-container"></div>`;
+      <div class="js-order-summary"></div>`;
 
     spyOn(localStorage,'getItem').and.callFake(()=>{
       return JSON.stringify([
